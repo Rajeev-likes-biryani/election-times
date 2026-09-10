@@ -1,0 +1,73 @@
+.intro-glasses{
+  font-size: clamp(1rem, 1vw, 1rem);
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  z-index: 101;
+  margin: 0;
+  white-space: pre;
+  pointer-events: none;
+  transform: translate(-50%, -45%);
+  opacity: 1;
+  
+  animation: glasses-vanish 2s 2s ease-in-out forwards;
+}
+
+.intro-glasses > .Glasses-animation {
+  display: inline-block;
+  animation: glasses-stack-in 1.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: var(--stack-delay);
+}
+
+.intro-glasses > .Glasses-animation:nth-child(1) {
+  --start-x: calc(-100vw - 100%);
+  --start-y: calc(-100vh - 100%);
+  --start-rotation: -8deg;
+  --stack-delay: 0.3s;
+}
+
+.intro-glasses > .Glasses-animation:nth-child(2) {
+  --start-x: calc(100vw + 100%);
+  --start-y: calc(100vh + 100%);
+  --start-rotation: 7deg;
+  --stack-delay: 0.2s;
+}
+
+.intro-glasses > .Glasses-animation:nth-child(3) {
+  --start-x: calc(-100vw - 100%);
+  --start-y: calc(100vh + 100%);
+  --start-rotation: -6deg;
+  --stack-delay: 0.1s;
+}
+
+.intro-glasses > .Glasses-animation:nth-child(4) {
+  --start-x: calc(100vw + 100%);
+  --start-y: calc(-100vh - 100%);
+  --start-rotation: 8deg;
+  --stack-delay: 0s;
+}
+
+@keyframes glasses-stack-in {
+  0% {
+    transform: translate(var(--start-x), var(--start-y)) rotate(var(--start-rotation));
+  }
+  72% {
+    transform: translate(0, 8px) rotate(-1deg);
+  }
+  86% {
+    transform: translate(0, -2px) rotate(0.25deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes glasses-vanish{
+   from{
+    opacity: 1;
+    font-size: clamp(1rem, 1vw, 1rem)
+   } to{
+    opacity: 0;
+    font-size: clamp(0.15rem, 0.1vw, 0.1rem)
+   }
+}
