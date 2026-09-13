@@ -221,8 +221,9 @@ body{
   object-fit: cover;
   z-index: 10000;
 	opacity:0;
-  justify-self: end;
-  margin-right: 29px;
+  position: absolute;
+  top: 0;
+  right: 28px;
   animation: decorationFadeIn 2.4s ease-in-out 2.1s forwards;
 }
 
@@ -259,7 +260,7 @@ body{
 .page-1-content{
   margin-left: 30%;
   margin-right: 30%;
-  padding-top: calc(4rem + 20px);
+  padding-top: 4rem;
 }
 
 .page-1-img-dino-container{
@@ -267,7 +268,6 @@ body{
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-top: 20px;
 }
 
 .pfp-wrap {
@@ -649,8 +649,8 @@ body{
 }
 
 .toggle-effect {
-    width: 400px;
-    height: 400px;
+    width: 320px;
+    height: 320px;
     position: relative;
     overflow: hidden;
     margin: 40px auto;
@@ -658,15 +658,15 @@ body{
 
 .real-promises{
   position: absolute;
-  inset: -20px 0 -20px;
+  inset: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
   box-sizing: border-box;
   z-index: 3;
-	padding-bottom: 40px;
-	padding-top: 40px;
+	padding-bottom: 20px;
+	padding-top: 20px;
 	cursor: grab;
   touch-action: pan-y;
   user-select: none;
@@ -674,15 +674,15 @@ body{
 
 .fake-promises{
   position: absolute;
-  inset: -20px 0 -20px;
+  inset: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
   box-sizing: border-box;
   z-index: 3;
-	padding-bottom: 40px;
-	padding-top: 40px;
+	padding-bottom: 20px;
+	padding-top: 20px;
 	cursor: grab;
   touch-action: pan-y;
   user-select: none;
