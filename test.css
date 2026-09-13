@@ -221,7 +221,7 @@ body{
   object-fit: cover;
   z-index: 10000;
 	opacity:0;
-    transform: translateX(-20px);
+    transform: translateX(0px);
   animation: decorationFadeIn 2.4s ease-in-out 2.1s forwards;
 }
 
@@ -243,7 +243,7 @@ body{
 .crown-fall{
   position: absolute;
   left: 50%;
-  top: var(--crown-land, 23vh);
+  top: var(--crown-land, 20vh);
   width: clamp(110px, 9vw, 200px);
   aspect-ratio: 3 / 2;
   object-fit: contain;
