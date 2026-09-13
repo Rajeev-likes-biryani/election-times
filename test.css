@@ -995,3 +995,239 @@ body{
   font-size: clamp(0.25rem, 0.5vw, 0.5rem);
   font-family: 'Pixelify sans';
 }
+
+/* =====================
+   MOBILE / TABLET
+   ===================== */
+@media (max-width: 760px){
+
+  .page-1-content{
+    margin-left: 8vw;
+    margin-right: 8vw;
+  }
+
+  .pfp{
+    width: min(55vw, 12rem);
+    height: auto;
+    min-width: 0;
+    min-height: 0;
+    aspect-ratio: 4 / 5;
+  }
+
+  .text-container{
+    white-space: normal;
+  }
+
+  .text-content{
+    font-size: clamp(0.9rem, 3.2vw, 1.4rem);
+  }
+
+  .ascii-wrap{
+    left: -30px;
+    top: -60px;
+  }
+
+  .dino-dim, .dino-bright{
+    font-size: 0.6rem;
+  }
+
+  .ascii-2-wrap{
+    top: 90px;
+    left: 30px;
+  }
+
+  .wifi-dim, .wifi-bright{
+    font-size: 0.4rem;
+  }
+
+  .page-2-main-content{
+    flex: 0 0 auto;
+    width: min(400px, 92vw);
+    height: min(400px, 92vw);
+    top: 120px;
+  }
+
+  .toggle-effect{
+    width: 80%;
+    height: 80%;
+    margin: 10% auto;
+  }
+
+  .page-text-container{
+    left: 20px;
+    right: 20px;
+  }
+
+  .bullet-point-container{
+    grid-template-columns: 30px 1fr 1fr;
+    margin-left: 10px;
+  }
+
+  .bullet{
+    height: 18px;
+    width: 18px;
+    margin-left: 6px;
+  }
+
+  .shovel-dim, .shovel-bright{
+    font-size: 0.6rem;
+    right: 10px;
+    top: 80px;
+  }
+
+  .page-3-content{
+    top: min(400px, 30vh);
+  }
+
+  .suggestion-box{
+    width: min(25rem, 92vw);
+    height: min(25rem, 92vw);
+  }
+
+  .letter-container{
+    width: min(15rem, 60vw);
+    height: min(10rem, 32vh);
+  }
+
+  .form-container{
+    width: min(20rem, 80%);
+    height: auto;
+  }
+
+  .form-frame{
+    width: 100%;
+    height: auto;
+  }
+
+  #message{
+    width: 72%;
+    top: 26%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .submit{
+    width: 90%;
+  }
+
+  .bottom-border{
+    margin-top: min(250px, 22vh);
+  }
+
+  .footer{
+    top: -40px;
+  }
+
+  .the-end{
+    width: min(300px, 75vw);
+    height: auto;
+  }
+
+  .bottom-star-1{
+    margin-left: clamp(10px, 5vw, 29px);
+  }
+
+  .bottom-star-2{
+    transform: translateX(clamp(-16px, -4vw, -20px));
+  }
+}
+
+/* =====================
+   SMALL PHONES
+   ===================== */
+@media (max-width: 480px){
+
+  .page-2-main-content{
+    width: min(400px, 94vw);
+    height: min(400px, 94vw);
+  }
+
+  .page-2-content{
+    padding: 0 8px;
+    box-sizing: border-box;
+  }
+
+  .bullet-point-container{
+    grid-template-columns: 26px 1fr 1fr;
+    margin-left: 6px;
+  }
+
+  .bullet-point-container p{
+    font-size: 0.8rem;
+  }
+
+  .border-1-2-container .page-2-border-container{
+    height: 32px;
+    width: 32px;
+  }
+
+  .corner-bottom-left .page-2-border-container,
+  .corner-bottom-right .page-2-border-container{
+    height: 32px;
+    width: 32px;
+  }
+
+  .page-2-border{
+    width: 22px;
+    margin-right: -2px;
+  }
+
+  .page-2-border-vertical{
+    height: 22px;
+  }
+
+  .suggestion-box{
+    width: min(25rem, 92vw);
+    height: min(25rem, 92vw);
+  }
+
+  .letter-container{
+    width: min(15rem, 62vw);
+    height: min(10rem, 34vh);
+  }
+
+  .form-container{
+    width: min(20rem, 82%);
+  }
+
+  #message{
+    width: 74%;
+  }
+
+  .swipe-tip{
+    font-size: 0.7rem;
+  }
+
+  .main-heading-page-2{
+    font-size: clamp(0.9rem, 4.5vw, 1.6rem);
+  }
+
+  .decorations-top,
+  .decorations-bottom{
+    height: 7px;
+    width: auto;
+  }
+
+  .star,
+  .star-2,
+  .bottom-star-1,
+  .bottom-star-2{
+    height: 30px;
+    width: 30px;
+  }
+
+  .star-2{
+    right: 24px;
+    top: 5px;
+  }
+
+  .suggestion-box-sub-heading{
+    font-size: clamp(0.5rem, 2.5vw, 0.8rem);
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px){
+  .page-1-img-dino-container{
+    max-height: 70vh;
+  }
+}
