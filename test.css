@@ -795,14 +795,15 @@ body{
 
 .suggestion-box{
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 25rem;
+  height: 25rem;
 }
 
 .suggestion-box-img{
-  height: 25rem;
-  width: 25rem;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -810,8 +811,14 @@ body{
   height: 10rem;
   width: 15rem;
   background-color: #dad2bf;
-  position: relative;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 100;
+  box-sizing: border-box;
+  padding: 0 10px;
+  overflow: hidden;
 }
 
 .left-border{
@@ -849,7 +856,11 @@ body{
   font-size: clamp(0.5rem, 3vw, 3rem);
   text-align: center;
   padding-top: 10px;
+  padding-bottom: 10px;
   color:#d95d39;
+  margin: 0;
+  line-height: 1.3;
+  word-break: break-word;
 }
 
 .suggestion-box-sub-heading{
@@ -858,29 +869,38 @@ body{
 }
 
 .answer-collector{
-  position: relative;
+  position: absolute;
+  bottom: 55px;
+  left: 0;
+  right: 0;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 1rem;
+  z-index: 110;
 }
 
 .form-container{
   background-color:#dad2bf;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20rem;
+  height: 10rem
 }
 
 .form-frame{
-  height: 10rem;
-  width: 25rem;
+  height: 9rem;
+  width: 20rem;
+  display: block;
 }
 
 #message{
   background-color:#dad2bf;
   padding-left: 10px;
-  height: 50px;
-  width: 200px;
+  height: 45px;
+  width: 160px;
   border: none;
   position: absolute;
   top: 35px;
@@ -898,16 +918,13 @@ body{
 
 .submit{
   border: none;
-  height: 45px;
-  width: 23rem;
-  position: absolute;
+  height: 40px;
+  width: 18rem;
   background-color: #E04201;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 5px;
   cursor: pointer;
   font-family: 'Pixelify Sans';
   font-size: clamp(0.5rem, 1vw, 1rem);
+  margin-bottom: 10px;
 }
 
 .bottom-border{
