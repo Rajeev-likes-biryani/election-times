@@ -395,7 +395,7 @@ body{
   color:#d95d39;
   position: absolute;
   top: 118px;
-  left: 60px;
+  left: 40px;
   font-size: clamp(0.75rem, 1.2vw, 2rem);
   transform: rotate(-90deg);
   padding: 0;
