@@ -394,8 +394,8 @@ body{
 .sub-text-page-1-2{
   color:#d95d39;
   position: absolute;
-  top: 68px;
-  left: 60px;
+  top: 200px;
+  left: 15px;
   font-size: clamp(0.75rem, 1.2vw, 2rem);
   transform: rotate(-90deg);
   transform-origin: left top;
@@ -443,7 +443,7 @@ body{
   color:#d95d39;
   position: absolute;
   top: 68px;
-  right: 60px;
+  right: 30px;
   font-size: clamp(0.75rem, 1.2vw, 2rem);
 
   transform: rotate(-90deg);
