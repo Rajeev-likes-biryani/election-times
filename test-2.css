@@ -212,9 +212,8 @@ body{
 }
 
 .decorations-top{
-  flex: 1 1 auto;
   height: 9px;
-  width: auto;
+  width: 100%;
   z-index: 10000;
 	opacity:0;
   animation: decorationFadeIn 2.1s ease-in-out 2.1s forwards;
