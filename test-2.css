@@ -211,6 +211,7 @@ body{
   animation: fadeIn 3s ease-in-out 2s;
 }
 
+.decorations-bottom,
 .decorations-top{
   height: 9px;
   width: 100%;
