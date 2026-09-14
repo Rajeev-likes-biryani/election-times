@@ -9,7 +9,7 @@ body{
 	min-height: 100svh;
 	min-height: 100dvh;
 	background-color: #dad2bfa6; 
-  overflow-x: hidden;
+  overflow-x: clip;
   font-family: 'Pixelify Sans', sans-serif;
   -webkit-tap-highlight-color: transparent;
 }
@@ -147,7 +147,7 @@ body{
 
 @media (max-width: 768px) {
   .border-right-line {
-    right: 47px;
+    height: 160vh;
   }
 }
 
@@ -265,6 +265,16 @@ body{
   height: 200vh;
 }
 
+@media (max-width: 768px){
+  .page-1-pin{
+    height: 200vh;
+  }
+
+  .page-2{
+    margin-top: 25px;
+  }
+}
+
 .page-1{
   width: 100%;
   min-height: 100vh;
@@ -281,7 +291,7 @@ body{
   position: absolute;
   left: 50%;
   top: var(--crown-land, 23vh);
-  width: clamp(110px, 9vw, 200px);
+  width: clamp(100px, 9vw, 200px);
   aspect-ratio: 3 / 2;
   object-fit: contain;
   z-index: 150;
@@ -290,6 +300,12 @@ body{
   will-change: transform;
   filter: drop-shadow(0 8px 14px rgba(0,0,0,0.3));
   opacity: 0;
+}
+
+@media (max-width: 768px){
+  .crown-fall{
+    top: var(--crown-land, 14vh);
+  }
 }
 
 .page-1-content{
