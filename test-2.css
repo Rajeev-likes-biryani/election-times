@@ -79,7 +79,7 @@ body{
 
 @media (max-width: 768px){
   .top-decor{
-    grid-template-columns: 30px 1fr 50px;
+    grid-template-columns: 50px 1fr 50px;
   }
 }
 
@@ -175,11 +175,7 @@ body{
   }
 }
 
-@media (max-width: 768px) {
-  .dotted-line {
-    right: 100px;
-  }
-}
+
 .dotted-2-line{
   position: fixed;
   top: 0px;
@@ -337,6 +333,13 @@ body{
   min-width: 12rem;
   min-height: 15rem;
 	animation: pfp-fadein 3s ease-in-out 2.1s forwards;
+}
+
+@media (max-width: 768px){
+  .pfp{
+    width: 50vw;
+    height: 55vw;
+  }
 }
 
 @keyframes pfp-fadein{
