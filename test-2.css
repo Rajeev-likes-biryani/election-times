@@ -1131,7 +1131,7 @@ body{
 
 .bottom-border{
   position: relative;
-  margin-top: 250px;
+  margin-top: 200px;
   width: 100%;
   background-color:#9C8F88;
   height: 2px;
@@ -1155,7 +1155,7 @@ body{
 .bottom-star-2{
   height: 40px;
   width: 40px;
-  transform: translateX(-20px);
+  transform: translateX(11px);
 }
 
 .footer{
@@ -1191,7 +1191,7 @@ body{
 
 .signature{
   color:#d95d39;
-  font-size: clamp(0.25rem, 0.5vw, 0.5rem);
+  font-size: clamp(0.5rem, 1vw, 1rem);
   font-family: 'Pixelify sans';
 }
 
