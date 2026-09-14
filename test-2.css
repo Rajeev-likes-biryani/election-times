@@ -261,13 +261,13 @@ body{
   height: 200vh;
 }
 
+.page-2{
+  margin-top: 125px;
+}
+
 @media (max-width: 768px){
   .page-1-pin{
     height: 200vh;
-  }
-
-  .page-2{
-    margin-top: 25px;
   }
 }
 
@@ -337,8 +337,9 @@ body{
 
 @media (max-width: 768px){
   .pfp{
-    width: 50vw;
-    height: 55vw;
+    width: 75vw;
+    height: 80vw;
+    margin-left: 5px;
   }
 }
 
@@ -360,11 +361,11 @@ body{
 .dino-dim, .dino-bright{
   position: absolute;
   top: 0px;
-  left: 0px;
+  left: -30px;
   color: #9C8F88;
   white-space: pre;
   cursor: default;
-  font-size: clamp(0.6rem, 1vw, 1rem);
+  font-size: clamp(0.5rem, 1vw, 1rem);
 }
 
 .dino-dim{
