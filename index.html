@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="glasses-animation.css">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 	</head>
 	<body>
 <div class="noise-overlay" aria-hidden="true"></div>
@@ -179,6 +182,41 @@
 </div>
 </div>
 
+<div class="video-page">  
+  <div class="dog-wrap" id="dogWrap">
+    <pre class="dog-bright" id="dogbright">
+            ,
+            |`-.__
+            / ' _/
+           ****` 
+          /    }
+         /  \ /
+     \ /`   \\\
+      `\    /_\\
+    `u said dogs?`
+⠀⠀⠀⠀
+    </pre>
+    <pre class="dog-dim" id="dogDim">
+            ,
+            |`-.__
+            / ' _/
+           ****` 
+          /    }
+         /  \ /
+     \ /`   \\\
+      `\    /_\\
+    `u said dogs?`
+⠀⠀⠀⠀
+    </pre>
+  </div>
+  <iframe
+    src="https://www.youtube.com/embed/9XIX4TOGeDU"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe></div>
+
 
 <div class="page-2">
   <div class="page-2-content">
@@ -222,30 +260,30 @@
    <div class="fake-promises" id="card1">
    <div class="bullet-point-container">
     <img class="bullet" src="./images/pixel-arrow.png">
-    <p> A padel court </p>
+    <p> "A padel court" </p>
    </div>
 
       <div class="bullet-point-container">
     <img class="bullet" src="./images/pixel-arrow.png">
-    <p> ACs in the hallway</p>
-
-   </div>
-
-      <div class="bullet-point-container">
-    <img class="bullet" src="./images/pixel-arrow.png">
-    <p> Build art and theatre rooms </p>
+    <p> "ACs in the hallway"</p>
 
    </div>
 
       <div class="bullet-point-container">
     <img class="bullet" src="./images/pixel-arrow.png">
-    <p> Cheaper canteens </p>
+    <p> "Build art and theatre rooms" </p>
+
+   </div>
+
+      <div class="bullet-point-container">
+    <img class="bullet" src="./images/pixel-arrow.png">
+    <p> "Cheaper canteens" </p>
 
    </div>
 
     <div class="bullet-point-container">
     <img class="bullet" src="./images/pixel-arrow.png">
-    <p> More p.e classes for IG </p>
+    <p> "More p.e classes for IG" </p>
 
    </div>
    </div>
@@ -599,6 +637,10 @@ margin: 0px;">Tip: swipe left</div>
       document.getElementById('shovelWrap'),
       document.querySelector('.shovel-bright')
     );
+  enableHoverGlow(
+    document.getElementById('dogWrap'),
+    document.querySelector('.dog-bright')
+  );
 
     const ripArt = document.querySelector('.ascii-art-rip-bright');
     ripArt.addEventListener('mousemove', (e) => {
