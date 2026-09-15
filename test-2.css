@@ -1337,7 +1337,6 @@ body{
 
 
 .nav-arrow{
-  margin: 0;
   color:#d95d39;
   font-size: 25px;
 }
@@ -1659,4 +1658,44 @@ body{
   font-size: clamp(0.5rem, 1vw, 1rem);
   font-family: 'Pixelify sans';
 }
+
+.gojo-wrap{
+  position: relative;
+  display: inline-block;
+  left: -70px;
+  top: -110px;
+}
+
+.gojo-dim, .gojo-bright{
+  position: absolute;
+  top: -100px;
+  right: 180px;
+  color: #9C8F88;
+  white-space: pre;
+  cursor: default;
+  font-size: 3.6px;
+}
+
+@media (max-width:768px){
+  .dino-dim, .dino-bright{
+    transform: rotate(-32deg);
+  }
+}
+
+.gojo-dim{
+  color: rgb(156, 143, 136, 0.45);
+}
+
+.gojo-bright{
+  color: rgba(156, 143, 136, 0.85);
+  -webkit-mask-image: radial-gradient(circle 60px at var(--mx, -999px) var(--my, -999px), black 0%, transparent 100%);
+  mask-image: radial-gradient(circle 60px at var(--mx, -999px) var(--my, -999px), black 0%, transparent 100%);
+}
+
+@media (max-width: 768px){
+  .gojo-dim, .gojo-bright{
+    opacity: 0;
+  }
+}
+
 
