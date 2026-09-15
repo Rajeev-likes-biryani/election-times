@@ -13,6 +13,13 @@
   animation: glasses-vanish 2s 2s ease-in-out forwards;
 }
 
+@media (max-width: 768px){
+  .intro-glasses{
+    transform: translate(-50%, calc(-45% - 130px));
+    animation-name: glasses-vanish-mobile;
+  }
+}
+
 .intro-glasses > .Glasses-animation {
   display: inline-block;
   animation: glasses-stack-in 1.4s cubic-bezier(0.22, 1, 0.36, 1) both;
@@ -65,11 +72,24 @@
 @keyframes glasses-vanish{
    from{
     opacity: 1;
-    font-size: clamp(0.5rem, 1vw, 1rem)
+    font-size: clamp(0.5rem, 1vw, 1rem);
    } to{
     opacity: 0;
-    font-size: clamp(0.15rem, 0.1vw, 0.1rem)
+    font-size: clamp(0.15rem, 0.1vw, 0.1rem);
    }
+}
+
+@keyframes glasses-vanish-mobile{
+  from{
+    opacity: 1;
+    font-size: clamp(0.5rem, 1vw, 1rem);
+    transform: translate(-50%, calc(-45% - 130px));
+  }
+  to{
+    opacity: 0;
+    font-size: clamp(0.15rem, 0.1vw, 0.1rem);
+    transform: translate(-50%, calc(-45% - 100px));
+  }
 }
 
 @media (max-width: 760px){
