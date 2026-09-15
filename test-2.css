@@ -841,8 +841,11 @@ body{
 }
 
 .main-heading-page-2{
-  font-size: clamp(0.75rem, 1.6vw, 10rem);
+  font-size: clamp(0.8rem, 1.6vw, 10rem);
 	transform: translateY(-10px);
+}
+.page-2,p{
+  font-size: clamp(0.7rem, 1.6vw, 10rem);
 }
 
 @media (max-width: 768px){
@@ -858,7 +861,7 @@ body{
   align-content: center;
   width: 100%;
   margin-top: 0;
-  margin-left: 0px;
+  margin-left: 20px;
 }
 
 .bullet-point-container p{
