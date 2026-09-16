@@ -1268,6 +1268,10 @@ body{
   font-size: 18px;
 }
 
+.highlight{
+  font-weight: 700;
+}
+
 .mission-2.expanded .details-container{
   opacity: 1;
 }
