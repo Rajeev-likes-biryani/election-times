@@ -910,7 +910,8 @@ body{
   z-index: 4;
   text-align: center;
   font-size: clamp(0.75rem, 1vw, 1.2rem);
-  color: #9C8F88;
+  color: black;
+  font-weight: 700;
 }
 
 .swipe-progress{
