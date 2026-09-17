@@ -234,14 +234,6 @@ body{
   }
 }
 
-.stars{
-  position: absolute;
-  top: -30px;
-  left: -30px;
-  height: 120px;
-  width: 120px;
-}
-
 .star{
   height: 40px;
   width: 40px;
@@ -341,37 +333,7 @@ body{
   min-width: 12rem;
   min-height: 15rem;
 	animation: pfp-fadein 3s ease-in-out 2.1s forwards;
-
 }
-
-.number1{
-  height: 150px;
-  width: 150px;
-  position: absolute;
-  top: 180px;
-  left: 90px;
-}
-
-.back{
-    height: 150px;
-  width: 150px;
-  position: absolute;
-  top: 180px;
-  left: 290px;
-  transform: rotate(30deg);
-}
-
-@media (max-width:768px){
-  .number1{
-    top: 180px;
-    left: -100px;
-  }
-  .back{
-  top: 170px;
-  left: 100px;
-  }
-}
-
 
 @media (max-width: 768px){
   .pfp{
@@ -797,7 +759,7 @@ body{
 
 .sub-heading-page-2{
   font-family: 'Anonymous pro', sans-serif;
-  font-size: clamp(0.75rem, 1vw, 1rem);
+  font-size: clamp(0.6rem, 1vw, 1rem);
     font-weight: 700;
   color:#d95d39;
   position: relative;
@@ -917,7 +879,7 @@ body{
   box-sizing: border-box;
   z-index: 3;
 	padding-bottom: 20px;
-	padding-top: 40px;
+	padding-top: 20px;
 	cursor: grab;
   touch-action: pan-y;
   user-select: none;
@@ -933,7 +895,7 @@ body{
   box-sizing: border-box;
   z-index: 3;
 	padding-bottom: 20px;
-	padding-top: 40px;
+	padding-top: 20px;
 	cursor: grab;
   touch-action: pan-y;
   user-select: none;
@@ -1304,10 +1266,6 @@ body{
 .explanations{
   text-align: center;
   font-size: 18px;
-}
-
-.highlight{
-  font-weight: 700;
 }
 
 .mission-2.expanded .details-container{
@@ -1720,8 +1678,8 @@ body{
 }
 
 .form-frame{
-  height: 9rem;
-  width: 20rem;
+  height: 8rem;
+  width: 15rem;
   display: block;
 }
 
