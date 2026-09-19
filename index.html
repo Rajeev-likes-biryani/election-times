@@ -1081,23 +1081,6 @@ const crownFall = document.getElementById("crownFall");
 const page1Pin = document.querySelector(".page-1-pin");
 const page1 = document.getElementById("page1");
 
-const centerText = document.querySelector(".text-content");
-const centerHighlights = centerText
-  ? Array.from(centerText.querySelectorAll(".text-content > .highlight"))
-  : [];
-let currentHighlight = -1;
-
-function applyHighlight(progress) {
-  if (centerHighlights.length === 0) return;
-  const idx = Math.min(centerHighlights.length - 1, Math.floor(progress * centerHighlights.length));
-  if (idx === currentHighlight) return;
-  currentHighlight = idx;
-
-  centerHighlights.forEach((el, i) => {
-    el.classList.toggle("highlight", i === idx);
-  });
-}
-
 function updateCrown() {
   if (!crownFall || !page1Pin) return;
   const page1Height = page1 ? page1.offsetHeight : window.innerHeight;
@@ -1106,8 +1089,6 @@ function updateCrown() {
 
   let progress = -rect.top / scrollDistance;
   progress = Math.max(0, Math.min(1, progress));
-
-  applyHighlight(progress);
 
   const crownHeight = crownFall.offsetHeight || 120;
   const startY = -(window.innerHeight + crownHeight);
